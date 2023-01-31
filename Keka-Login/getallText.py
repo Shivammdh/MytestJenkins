@@ -14,9 +14,9 @@ def test_kekalogin():
     driver.execute_script("arguments[0].value='msys';",vd)
 
     #send the email and password to these fields
-    driver.find_element(By.ID,"email").send_keys("ssharma@msystechnologies.com")
+    driver.find_element(By.ID,"email").send_keys("xyz@gmail.com")
 
-    driver.find_element(By.ID,"password").send_keys('Msystech@1906')
+    driver.find_element(By.ID,"password").send_keys('Password1234')
     driver.find_element(By.CSS_SELECTOR,"button[type='submit']").click()
     time.sleep(5)
     name=driver.find_element(By.CSS_SELECTOR,"span.profile-name").text
